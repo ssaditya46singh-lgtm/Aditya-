@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aditya | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+nav h2 {
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.typing {
+  font-size: 20px;
+  margin-top: 10px;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(20) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  to { width: 220px; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #334155;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #020617;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Aditya</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Hi, I'm <span>Aditya 👋</span></h1>
+  <div class="typing">Future AI Engineer</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>🚀 About Me</h2>
+  <p>I’m a BTech CSE student specializing in AI & ML. I love building smart systems and solving real-world problems.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>💻 Projects</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Electricity Monitor</h3>
+      <p>Detects unused devices and sends alerts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ring Counter</h3>
+      <p>Digital electronics project using flip-flops.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>📞 Contact</h2>
+  <p>Email: your@email.com</p>
+  <a href="#" class="btn">LinkedIn</a>
+</section>
+
+<footer>
+  <p>© 2026 Aditya Singh</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aditya | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  width: 130px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.typing {
+  margin-top: 10px;
+  border-right: 2px solid;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(30) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing { to { width: 300px; } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+/* PROJECT IMAGE */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* SKILLS */
+.skills span {
+  margin: 5px;
+  padding: 8px 12px;
+  background: #1e293b;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* SOCIAL */
+.social a {
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Aditya</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="https://via.placeholder.com/130">
+  <h1>Hi, I'm <span>Aditya Singh 👋</span></h1>
+  <div class="typing">AI Developer | Problem Solver</div>
+  <a href="#" class="btn">Download Resume</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>🚀 About Me</h2>
+  <p>I build smart systems using AI & coding. Passionate about solving real-world problems.</p>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>🛠 Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>C</span>
+    <span>MATLAB</span>
+    <span>AI/ML</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>💻 Projects</h2>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x150">
+    <h3>Electricity Monitoring</h3>
+    <p>Tracks unused devices & saves power.</p>
+    <a href="#" class="btn">View</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x150">
+    <h3>Ring Counter</h3>
+    <p>Digital electronics circuit project.</p>
+    <a href="#" class="btn">View</a>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>📞 Contact</h2>
+  <p>Email: your@email.com</p>
+
+  <div class="social">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Aditya Singh 🚀</p>
+</footer>
+
+</body>
+</html>
